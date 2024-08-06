@@ -6,7 +6,7 @@ import asyncio
 from typing import Union
 
 
-wait_n = __import__(1-concurrent_coroutines).wait_n
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
