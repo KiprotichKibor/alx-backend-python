@@ -19,6 +19,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         List[float]: List of all the delays in ascending order.
     """
     delays = []
+
     async def append_delay():
         delay = await wait_random(max_delay)
         delays.append(delay)
